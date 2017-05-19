@@ -1,4 +1,4 @@
-package com.example.joanna.stormy;
+package com.example.joanna.stormy.ui;
 
 
 import android.app.AlertDialog;
@@ -7,6 +7,8 @@ import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.example.joanna.stormy.R;
 
 public class AlertError extends DialogFragment {
     @Override
