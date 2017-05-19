@@ -1,5 +1,7 @@
-package com.example.joanna.stormy;
+package com.example.joanna.stormy.weather;
 
+
+import com.example.joanna.stormy.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -34,36 +36,7 @@ public class Weather {
         return mTime;
     }
     public int getIconId(){
-        int iconID=R.drawable.clear_day;
-        if(mIcon.equals("clear-day")){
-            iconID=R.drawable.clear_day;
-        }else if(mIcon.equals("clear-night")){
-            iconID=R.drawable.clear_night;
-        }else if (mIcon.equals("rain")) {
-            iconID = R.drawable.rain;
-        }
-        else if (mIcon.equals("snow")) {
-            iconID = R.drawable.snow;
-        }
-        else if (mIcon.equals("sleet")) {
-            iconID = R.drawable.sleet;
-        }
-        else if (mIcon.equals("wind")) {
-            iconID = R.drawable.wind;
-        }
-        else if (mIcon.equals("fog")) {
-            iconID = R.drawable.fog;
-        }
-        else if (mIcon.equals("cloudy")) {
-            iconID = R.drawable.cloudy;
-        }
-        else if (mIcon.equals("partly-cloudy-day")) {
-            iconID = R.drawable.partly_cloudy;
-        }
-        else if (mIcon.equals("partly-cloudy-night")) {
-            iconID = R.drawable.cloudy_night;
-        }
-        return iconID;
+        return Forecst.getIconId(mIcon);
     }
 
     public void setTime(long time) {

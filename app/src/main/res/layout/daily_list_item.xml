@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="100dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:background="#ff669900">
+
+    <ImageView
+        android:id="@+id/temperatureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        app:srcCompat="@drawable/bg_temperature"/>
+
+    <ImageView
+        android:id="@+id/iconWeaView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/temperatureView"
+        android:layout_toRightOf="@+id/temperatureView"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        app:srcCompat="@drawable/cloudy"/>
+
+    <TextView
+        android:id="@+id/weekdayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iconWeaView"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/iconWeaView"
+        android:layout_toRightOf="@+id/iconWeaView"
+        android:paddingLeft="10dp"
+        android:text="friday"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/tempView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/temperatureView"
+        android:layout_alignBottom="@+id/temperatureView"
+        android:layout_alignLeft="@id/temperatureView"
+        android:layout_alignRight="@id/temperatureView"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/colorPrimaryDark"/>
+</RelativeLayout>
